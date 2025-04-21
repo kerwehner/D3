@@ -1,42 +1,36 @@
-## Data Journalism and D3
+# D3-Challenge: Data Journalism and D3
 
-![Newsroom](https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif)
+## Background
 
+This project involves analyzing the current trends shaping people's lives in the United States, as well as creating charts and interactive elements to help readers understand findings.
 
-### Overview
+The data set included with the assignment is based on 2014 ACS 1-year estimates: [https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml](https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml), and includes data on rates of income, obesity, poverty, etc. by state. MOE stands for "margin of error."
 
-#### Core Assignment: D3 Dabbler
+## Dashboard
 
-![4-scatter](Images/4-scatter.jpg)
+Bootstrap and custom CSS was used to pretty up the dashboard.
 
-Create a scatter plot between two of the data variables such as `Healthcare vs. Poverty` or `Smokers vs. Age`.
+**This can be viewed at: [Health Risks vs. Demographics Dashboard](https://neha-nayeem.github.io/D3-Challenge)**
 
-Using the D3 techniques, create a scatter plot that represents each state with circle elements. 
+## Core Assignment: D3 Dabbler (Required Assignment)
 
-* Include state abbreviations in the circles.
+Using D3, data was pulled in from the `data.csv` and two variables `Healthcare vs. Poverty` were used to create a scatter plot. The following was also completed:
 
-* Create and situate axes and labels to the left and bottom of the chart.
+* State abbreviations were included as text labels in the circles.
+* Axes and labels were created and situated to the left and bottom of the chart.
 
-* Note: Need to use `python -m http.server` to run the visualization. This will host the page at `localhost:8000` in your web browser.
-
-- - -
-
-### Bonus: Impress the Boss
-
-Why make a static graphic when D3 lets you interact with your data?
-
-![7-animated-scatter](Images/7-animated-scatter.gif)
+## Bonus: Impress the Boss (Optional Assignment)
 
 #### 1. More Data, More Dynamics
 
-Include more demographics and more risk factors. Place additional labels in the scatter plot and give them click events so that users can decide which data to display. Animate the transitions for circles' locations as well as the range of axes. 
+For the bonus, more demographics and more risk factors were included on the chart by doing the following:
+
+* Binding all of the CSV data to the circles to easily determine their x or y values when the labels are clicked.
+* Placing additional labels in the scatter plot and giving them click events so that users can decide which data to display.
+* Animating the transitions for circles' locations as well as the range of the axes.
 
 #### 2. Incorporate d3-tip
 
-While the ticks on the axes allow us to infer approximate values for each circle, it's impossible to determine the true value without adding another layer of data. Enter tooltips: developers can implement these in their D3 graphics to reveal a specific element's data when the user hovers their cursor over the element. Add tooltips to your circles and display each tooltip with the data that the user has selected. Use the `d3-tip.js` plugin developed by [Justin Palmer](https://github.com/Caged).
+Another layer of data was added to determine the true value of each data point: **tooltips**! Tooltips were added to the circles to display data that the user has selected.
 
-![8-tooltip](Images/8-tooltip.gif)
-
-* Check out [David Gotz's example](https://bl.ocks.org/davegotz/bd54b56723c154d25eedde6504d30ad7) to see how you should implement tooltips with d3-tip.
-
-- - -
+For this, the `d3-tip.js` plugin developed by [Justin Palmer](https://github.com/Caged) was used.
