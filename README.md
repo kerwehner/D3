@@ -1,6 +1,8 @@
 # Data Journalism and D3
 
-## Background
+![1745249576155](assets\images\header.gif "header")
+
+## Overview
 
 This project involves analyzing the current trends shaping people's lives in the United States, as well as creating charts and interactive elements to help readers understand findings.
 
