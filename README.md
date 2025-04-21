@@ -1,6 +1,6 @@
 # Data Journalism and D3
 
-![1745249576155](assets\images\header.gif "header")
+![header](image/README/header.gif)
 
 ## Overview
 
